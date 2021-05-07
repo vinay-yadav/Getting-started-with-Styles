@@ -27,6 +27,7 @@ p {
     max-width: 1100px;
     margin: auto;
     padding: 0 20px;
+    overflow: auto;
 }
 
 .text-primary {
@@ -70,10 +71,21 @@ p {
 }
 
 .bg-primary {
-    background: #333;
-    color: #f7c08a;;
+    color: #333;
+    background: #f7c08a;;
 }
 
+.clr {
+    clear: both;
+}
+
+.py-1 { padding: 10px 0; }
+.py-2 { padding: 20px 0; }
+.py-3 { padding: 30px 0; }
+
+.l-heading { font-size: 40px; }
+
+/* Navbar */
 #navbar {
     background-color: #333;
     overflow: auto;
@@ -128,7 +140,7 @@ p {
 }
 
 #showcase .showcase-content p {
-    padding: 20px;
+    padding-bottom: 20px;
     line-height: 1.7em;
 }
 
@@ -156,5 +168,95 @@ p {
 
 #home-info .info-content p {
     padding-bottom: 30px;
+}
+
+.box {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding: 50px;
+}
+
+.box i {
+    margin-bottom: 10px;
+}
+
+#footer {
+    background-color: #444;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+    text-align: left;
+}
+
+.info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+.info-right img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#testimonial {
+    background: url('../images/test-bg.jpg') no-repeat center center/cover;
+    height: 600px;
+    padding-top: 100px;
+}
+
+#testimonial h2 {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+.testimonial {
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.testimonial img {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: #ddd 1px solid;
+}
+
+#contact-form textarea {
+    height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #f7c08a;
 }
 
