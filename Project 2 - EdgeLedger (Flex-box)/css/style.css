@@ -1,0 +1,185 @@
+/* @import url("https://fonts.googleapis.com/css?family=Raleway"); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+}
+
+a { text-decoration: none; }
+
+p { margin: 0.75rem 0; }
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.text-center { text-align: center; }
+
+.text-primary { color: #93cb52; }
+
+.m-heading {
+    font-size: 2rem; 
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.l-heading {
+    font-size: 4rem; 
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+.btn {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    background: #93cb52;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+}
+
+.btn:hover {
+    background: #7ab436;
+}
+
+.btn-dark {
+    background: #333;
+    color: #fff;
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dotted #444;
+}
+
+
+/* Navbar */
+#navbar {
+    background: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+
+#navbar ul {
+    align-items: center;
+    list-style: none;
+    display: flex;
+}
+
+#navbar ul a {
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul a:hover {
+    background: #93cb52;
+    border-radius: 5px;
+}
+
+/* Showcase */
+#showcase {
+    background: url('../images/showcase.jpg') no-repeat center center/cover;
+    height: calc(100vh - 60px);
+    color: #fff;
+}
+
+#showcase .showcase-content {
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    /* overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* What WE DO */
+#what .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#what .item {
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+}
+
+/* Who We Are */
+#who {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#who div {
+    flex: 1;
+}
+
+
+#who .who-img {
+    background: url('../images/people.jpg') no-repeat center center/cover;
+}
+
+/* Our Clients */
+#clients .items{
+    display: flex;
+}
+
+#clients .items img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
