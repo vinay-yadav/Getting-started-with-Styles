@@ -33,6 +33,11 @@ p { margin: 0.75rem 0; }
     color: #fff;
 }
 
+.bg-primary {
+    background: #93cb52;
+    color: #fff;
+}
+
 .text-center { text-align: center; }
 
 .text-primary { color: #93cb52; }
@@ -124,7 +129,7 @@ p { margin: 0.75rem 0; }
 /* Showcase */
 #showcase {
     background: url('../images/showcase.jpg') no-repeat center center/cover;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 65px);
     color: #fff;
 }
 
@@ -174,8 +179,9 @@ p { margin: 0.75rem 0; }
 }
 
 /* Our Clients */
-#clients .items{
+#clients .items {
     display: flex;
+    flex-wrap: nowrap;
 }
 
 #clients .items img {
@@ -183,3 +189,28 @@ p { margin: 0.75rem 0; }
     margin: auto;
     width: 60%;
 }
+
+/* Contact */
+#contact {
+    display: flex;
+}
+
+#contact .contact-form,
+#contact .map {
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form .form-group label {
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+

@@ -1,0 +1,63 @@
+/* Navbar */
+@media (max-width: 500px){
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar .logo {
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    
+    #navbar ul {
+        padding: 0.5rem;
+    }
+
+    /* Showcase */
+    #showcase {
+        height: calc(100vh - 111px);
+    }
+
+    /* What WE DO */
+    #what .items {
+        flex-direction: column;
+    }
+
+    /* Who We Are */
+    #who .who-img {
+        display: none;
+    }
+
+    /* Our Clients */
+    #clients .items div:last-child {
+        display: none;
+    }
+
+    #clients .items img {
+        width: 80%;
+    }
+
+    /* Contact */
+    #contact {
+        flex-direction: column;
+    }
+
+    #contact .contact-form,
+    #contact .map {
+        flex: none;
+    }
+
+    #contact .map {
+        height: 300px;
+        border-top: 4px solid #333;
+    }
+}
+
+
+@media (max-height: 640px) {
+    #showcase .showcase-content h1 {
+        font-size: 3rem;
+        padding-top: 8rem;
+    }
+}
